@@ -1,0 +1,19 @@
+{
+  "name": "hackathondataca_tweetgol",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start_sphero": "node sphero_gol.js",
+    "start_vine": "node vinedatorcida.js",
+  },
+  "author": "Luis Leao <luis.leao@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "node-sphero": "0.0.6",
+    "ntwitter": "^0.5.0",
+    "request": "^2.36.0",
+    "mongodb": "*"
+  }
+}

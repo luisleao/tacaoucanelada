@@ -1,0 +1,498 @@
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,700);*/
+
+
+@import url(http://fonts.googleapis.com/css?family=Astloch|Codystar|Roboto:400,100,300,700);
+
+body {
+	padding: 0;
+	margin: 0;
+	font: 14px "Roboto", Helvetica, Arial, sans-serif;
+	background-color: #222;
+	color: #fff;
+
+	background-image:url('http://i.stack.imgur.com/aFCkB.png');
+	background-repeat: repeat;
+	background-attachment: fixed;
+
+}
+
+
+a {
+  color: #00B7FF;
+}
+
+h3 {
+	font-family: "Roboto";
+	font-weight: 100;
+	font-size: 2em;
+}
+
+h1 {
+	font-family: "Roboto";
+	font-weight: 100;
+	font-size: 3em;
+	margin: 0;
+}
+
+h1 a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+h1 .taca {
+	font-family: Codystar;
+}
+h1 .canelada {
+	font-family: Astloch;
+}
+h2 {
+	font-weight: 100;
+	font-size: 1.2em;
+	margin: 0;
+}
+
+div.header {
+	padding: 20px;
+	clear: both;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 999;
+
+
+
+	background: -webkit-gradient(linear, left top, left bottom, rgba(0,0,0,0.8), rgba(0,0,0,0)); /* Saf4+, Chrome */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.8), rgba(0,0,0,0)); /* Chrome 10+, Saf5.1+ */
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.8), rgba(0,0,0,0)); /* FF3.6+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,0.8), rgba(0,0,0,0)); /* IE10 */
+	background: -o-linear-gradient(top, rgba(0,0,0,0.8), rgba(0,0,0,0)); /* Opera 11.10+ */
+	background:  linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0)); /* W3C */
+
+
+}
+
+div.footer {
+	padding: 20px;
+	clear: both;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+
+	background: -webkit-gradient(linear, left top, left bottom, rgba(0,0,0,0), rgba(0,0,0,.8)); /* Saf4+, Chrome */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.8)); /* Chrome 10+, Saf5.1+ */
+	background: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.8)); /* FF3.6+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.8)); /* IE10 */
+	background: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,.8)); /* Opera 11.10+ */
+	background:  linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8)); /* W3C */
+
+}
+
+div.footer a {
+	color: inherit;
+}
+div.footer a:hover {
+	text-decoration: none;
+}
+
+
+div.header ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	right: 20px;
+	top: 20px;
+}
+
+div.header ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 100;
+	font-size: 1.5em;
+	padding: 5px 10px;
+}
+div.header ul li a:hover,
+body.top_tacas .header li.top_tacas a,
+body.top_caneladas .header li.top_caneladas a,
+body.top_likes .header li.top_likes a,
+body.top_comments .header li.top_comments a,
+body.new .header li.new a
+{
+	background-color: rgba(0, 50, 25, 0.5);
+}
+
+
+
+div.header ul li {
+	display: block;
+	float: left;
+}
+
+ul.lista {
+	list-style-type: none;
+	margin: 110px 0 60px 0;
+	padding: 0;
+	overflow: hidden;
+
+}
+
+
+
+ul.lista li {
+	float: left;
+	width: 25%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+
+
+
+ul.lista li *, div.header ul, div.header ul li a {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+
+}
+
+ul.lista li video {
+	width: 100%;
+	margin: 0;
+	padding: 0
+	/*
+	margin: 1% auto;
+	*/
+}
+
+.avatar {
+	position: absolute;
+	bottom: 10px;
+	width: 50px;
+	height: 50px;
+	-webkit-border-radius: 25px; -moz-border-radius: 25px;border-radius: 25px;
+	left: 10px;
+}
+
+ul.lista li span {
+	position: absolute;
+	top: 10px;
+	font-size: 2em;
+	background-color: rgba(0, 0, 0, .5);
+	padding: .2em;
+
+	-webkit-border-radius: 5px; -moz-border-radius: 5px;border-radius: 5px;
+}
+ul.lista li span.likes {
+	left: 10px;
+}
+ul.lista li span.comments {
+	right: 10px;
+}
+
+
+
+
+
+
+.espaco {
+	margin: 30px;
+}
+
+
+
+
+ul.lista li:hover .votes, ul.lista li:hover .stats {
+	opacity: 1;
+}
+
+ul.lista li .votes, ul.lista li .stats {
+	opacity: 0;
+}
+
+
+
+
+
+div.votes {
+	position: absolute;
+	top: 40%;
+	width: 60%;
+	height: 10%;
+	left: 20%;
+	opacity: 0;
+}
+
+
+div.votes a.btn_voto {
+	display: block;
+	background-image: url(/images/flat-ui-icons-24-px.png);
+	background-repeat: no-repeat;
+	height: 83px;
+	width: 83px;
+	text-indent: -999px;
+	overflow: hidden;
+	opacity: .3;
+	-webkit-border-radius: 40px; -moz-border-radius: 40px;border-radius: 40px;
+
+	-webkit-box-shadow: 0px 3px 20px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 20px 5px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 20px 5px rgba(0,0,0,0.75);
+
+}
+
+div.votes a.vote_taca:hover, div.votes a.vote_canelada:hover {
+	opacity: 1;
+}
+
+
+
+div.votes a.vote_taca {
+	background-position: 0 100%;
+	float: right;
+}
+div.votes a.vote_canelada {
+	background-position: 66% 0;
+	float: left;
+}
+
+
+
+/* VOLTAR div.votes a.vote_canelada */
+
+
+
+a.vineLink {
+	display: block;
+	background-image: url(/images/vine_logo_white.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+
+	/* width: 80px; height: 34px; */
+	width: 60px;
+	height: 25px;
+
+
+	overflow: hidden;
+	text-indent: -999px;
+	opacity: .5;
+}
+
+a.vineLink:hover {
+	opacity: 1;
+}
+
+
+
+
+
+
+div.vote_result {
+	z-index: 9;
+	background-color: rgba(0,255,0,1);
+	width: 100%;
+	height: 100%; /*40px;*/
+	top: 50%;
+	left: 0;
+	position: absolute;
+	border: solid 3px #fff;
+
+
+	-webkit-box-shadow: 0px 3px 20px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 20px 5px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 20px 5px rgba(0,0,0,0.75);
+
+	/*-webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px;*/
+
+	overflow: hidden;
+	display: none;
+}
+
+div.vote_result .taca {
+	background-color: rgba(255, 0, 0, 1);
+	/*-webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px 0 0 30px;*/
+	height: 100%;
+
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+
+}
+
+
+
+
+div.footer div.modo {
+	position: fixed;
+	bottom: -50px;
+
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+
+	font-size: 2em;
+	font-weight: 100;
+
+	text-align: center;
+	width: 50%;
+	left: 45%;
+
+}
+
+div.footer:hover div.modo {
+	bottom: 0;
+}
+div.footer div.modo a {
+	display: block;
+	float: left;
+	margin: 5px;
+	padding: 5px;
+	text-decoration: none;
+	color: rgba(255, 255, 255, .5);	
+
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+
+}
+
+
+div.footer:hover div.modo a:hover {
+	color: rgba(255, 255, 0, 1);	
+}
+
+body div.footer div.modo .playing {
+	color: rgba(255, 255, 255, .5);	
+}
+body div.footer div.modo .normal {
+	color: rgba(255, 255, 255, 1);
+}
+
+
+body.playing div.footer div.modo .playing {
+	color: rgba(255, 255, 255, 1);	
+}
+body.playing div.footer div.modo .normal {
+	color: rgba(255, 255, 255, .5);
+}
+
+
+
+
+/*
+.playing
+.normal
+*/
+
+
+
+
+
+body.playing ul.lista li {
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
+}
+
+
+body.playing ul.lista {
+	margin: 0;
+}
+
+/*
+body.playing ul.lista .votes {
+	display: none;
+}
+*/
+
+body.playing {
+	overflow: hidden;
+}
+
+body.playing ul.lista li .stats {
+	opacity: 1;
+}
+
+
+
+
+body.playing .header ul {
+	opacity: 0;
+}
+
+body.playing .header ul:hover {
+	opacity: 1;
+}
+
+body.playing .avatar {
+	left: 10px;
+	bottom: 10px;
+	position: fixed;
+	width: 30px;
+	height: 30px;
+	-webkit-border-radius: 100px; -moz-border-radius: 100px; border-radius: 100px;
+
+	opacity: .5;
+	border: solid 4px #fff;
+	z-index: 999;
+}
+
+
+body.playing div.footer h2 {
+	margin-left: 40px;
+}
+
+body.playing a.vineLink {
+	position: fixed;
+	width: 80px;
+	height: 34px;
+	z-index: 99;
+}
+
+
+
+
+body.playing ul.lista li {
+	display: none;
+}
+body.playing ul.lista li.current {
+	display: block;
+}
+
+body.playing .stats .numbers {
+	display: none;
+}
+
+
+body.playing video {
+	position: fixed;
+	top: -25%;
+}
+
+body.playing div.votes {
+	opacity: 1;
+	position: fixed;
+}
+
+
+
+
+
+body.playing div.votes .btn_voto {
+	background-size: 350%;
+	height: 200px;
+	width: 200px;
+	background-color: #000;
+	border-radius: 100px;
+
+}
+
+
+

@@ -1,0 +1,31 @@
+{
+	
+	"twitter": {
+		"consumer_key": "buvfmHsnrBEB0bdEFmzQ",
+		"consumer_secret": "qyjMf7SecpDuRxSq2HRIUGypCVZPRWLkLZ3wbqbK4c",
+		"access_token_key": "10095682-PwWFAw3DpukQs9T0aC6sWtRJrb2EeuSDG6u1mjeHW",
+		"access_token_secret": "6L5spqmk4DHCKDSqHZDw23u3nopN95bZydEWYyz63NCpM"
+  	},
+
+	
+	"filter": ["vine worldcup", "vine copa", "vine world cup"],
+
+
+	"games": {
+		"201406121700": {
+			"name": "BRAxCRO",
+			"team1": "Brasil",
+			"team2": "Croacia"
+		}
+	},
+
+	"keywords": {
+
+		"brasil": {
+			"image": "bra.png",
+			"keywords": ["BRA"]
+		}
+
+	}	
+
+}

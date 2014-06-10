@@ -1,0 +1,68 @@
+extends layout
+
+block content
+
+	div.header
+		h1
+			a(href="/")
+				span.taca Taça
+				| &nbsp;ou&nbsp; 
+				span.canelada Canelada
+
+		h2 A lado bom e ruim do futebol
+
+		ul
+			li.top_tacas
+				a(href="/top/tacas") Taças
+			li.top_caneladas
+				a(href="/top/caneladas") Caneladas
+			li.top_likes
+				a(href="/top/likes") Mais Curtidos
+			li.top_comments
+				a(href="/top/comments") Mais Comentados
+			li.new
+				a(href="/new") Mais Novos
+
+	ul.lista
+		each dado, i in dados
+
+			li(id=dado._id, idx=i)
+
+				video(loop)
+					source(src="#{dado.videoUrl}")
+
+				div.stats
+					span.numbers.likes(title="Likes no Vine")  #{dado.likesCount}
+					span.numbers.comments(title="Comentários no Vine") #{dado.commentsCount}
+					img.avatar(src="#{dado.avatarUrl}")
+
+				a.vineLink(href="#{dado.raw.permalinkUrl}", target="_blank")
+					| #{dado.raw.permalinkUrl}
+
+				div.votes
+
+					a.btn_voto.vote_taca(href="/#{dado._id}/taca")
+						| taça
+					a.btn_voto.vote_canelada(href="/#{dado._id}/canelada")
+						| canelada
+
+					div.vote_result
+						div.taca
+		else
+			div.espaco
+				h1 Nenhum registro encontrado!
+				h3 :'(
+
+
+	div.footer
+		h2 Criado no 
+			a(href="https://www.hackerleague.org/hackathons/hackathon-da-taca" target="_blank")
+				| Hackathon da Taça
+			|  em 31/05/2014 por 
+			a(href="http://luisleao.com.br" target="_blank")
+				| Luís Leão
+			| .
+
+		div.modo
+			a.playing(href="#playing") Um vídeo por vez
+			a.normal(href="#normal") Listagem de vídeos
